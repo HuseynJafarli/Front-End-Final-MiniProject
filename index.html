@@ -10,86 +10,234 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
     <title>Nest Website</title>
 </head>
 
 <body>
-    <div class="navbar">
-        <div id="logo">
-            <a href="index.html"><img src="assets/images/logo.svg" alt="logo"></a>
-        </div>
-        <div id="search-bar" style="display: flex; justify-content: center; align-items: center;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-8 col-xs-offset-2">
-                        <div style="border: 2px solid #BCE3C9;" class="input-group">
-                            <div style="display: flex; justify-content: center; align-items: center; margin-right: 5px;"
-                                class="input-group-btn search-panel">
-                                <div class="dropdown">
-                                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <span id="dropdown-text">All Categories</span>
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
+    <section class="navbar">
+        <div class="mycontainer">
+            <div class="navbar-in">
+                <div id="logo">
+                    <a href="index.html"><img src="assets/images/logo.svg" alt="logo"></a>
+                </div>
+                <div id="search-bar" style="display: flex; justify-content: center; align-items: center;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-8 col-xs-offset-2">
+                                <div style="border: 2px solid #BCE3C9;" class="input-group">
+                                    <div style="display: flex; justify-content: center; align-items: center; margin-right: 5px;"
+                                        class="input-group-btn search-panel">
+                                        <div class="dropdown">
+                                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                <span id="dropdown-text">All Categories</span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                        </div>
+                                        <ul class="dropdown-menu scrollable-dropdown" role="menu">
+                                        </ul>
+                                    </div>
+                                    <form id="submit-form" class="form-inline my-2 my-lg-0">
+                                        <input
+                                            style="width: 526px; height: 50px; border-radius: 0px; border-style: none; border-left: transparent"
+                                            class="form-control mr-sm-2" type="search" placeholder="Search for items..."
+                                            aria-label="Search">
+                                    </form>
                                 </div>
-                                <ul class="dropdown-menu scrollable-dropdown" role="menu">
-                                </ul>
                             </div>
-                            <form id="submit-form" class="form-inline my-2 my-lg-0">
-                                <input
-                                    style="width: 526px; height: 50px; border-radius: 0px; border-style: none; border-left: transparent"
-                                    class="form-control mr-sm-2" type="search" placeholder="Search for items..."
-                                    aria-label="Search">
+                        </div>
+                    </div>
+                </div>
+                <div class="location container">
+                    <span>
+                        <p>Your Location</p>
+                    </span>
+                </div>
+                <div style="display: flex;" id="action-div">
+                    <div class="action-icon">
+                        <img style="height: 25px; width: 25px;" src="./assets/images/icon-compare.svg" alt="compare">
+                        <p style="margin-left: 5px; margin-top: 15px;">Compare</p>
+                    </div>
+                    <div class="action-icon">
+                        <img style="height: 25px; width: 25px;" src="./assets/images/icon-heart.svg" alt="wishlist">
+                        <p style="margin-left: 5px; margin-top: 15px;">Wishlist</p>
+                    </div>
+                    <div class="action-icon">
+                        <img style="height: 25px; width: 25px;" src="./assets/images/icon-cart.svg" alt="cart">
+                        <p style="margin-left: 5px; margin-top: 15px;">Cart</p>
+                    </div>
+                    <div class="action-icon">
+                        <img style="height: 25px; width: 25px;" src="./assets/images/icon-user.svg" alt="account">
+                        <p style="margin-left: 5px; margin-top: 15px;">Account</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="sticky-bar">
+        <div class="mycontainer">
+            <div class="sticky-bar-in">
+                <div class="left-side">
+                    <div class="btn-group">
+                        <button style="background-color: #3BB77E;" class="btn btn-success btn-lg dropdown-toggle"
+                            type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img style="width: 30px; height: 30px;" src="./assets/images/icons8-apps-60.png" alt="apps">
+                            <span>Browse All Categories</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            ...
+                        </ul>
+                    </div>
+                    <div class="sticky-bar-nav">
+                        <a style="color: #3BB77E;" href="index.html">Home</a>
+                        <a href="#">Product</a>
+                        <a href="#">Category</a>
+                        <a href="#">Slider</a>
+                    </div>
+                </div>
+                <div style="display: flex;" class="right-side">
+                    <div class="hotline d-none d-lg-flex">
+                        <img src="./assets/images/icon-headphone.svg" alt="hotline">
+                        <p>1900 - 888<span>24/7 Support Center</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <main>
+        <section class="slider">
+            <div class="mycontainer">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./assets/images/slider-1.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/images/slider-2.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-theme="dark"
+                        data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <i class="bi bi-arrow-left-circle-fill"
+                            style="color: #3BB77E; font-size: 2.5rem; margin-right: 130px;"></i>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <i class="bi bi-arrow-right-circle-fill"
+                            style="color: #3BB77E; font-size: 2.5rem; margin-left: 130px;"></i>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+
+                <div class="slider-content">
+                    <h1 class="display-1">
+                        Don’t miss amazing<br>
+                        grocery deals
+                    </h1>
+                    <p>Sign up for the daily newsletter</p>
+                    <div class="subscribe-form">
+                        <div class="subscribe-form-content">
+                            <form class="subscription">
+                                <input class="add-email" type="email" placeholder="Your email address">
+                                <button class="submit-email" type="button">
+                                    <span class="before-submit">Subscribe</span>
+                                </button>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="location">
-            <span>
-                <p>Your Location</p>
-            </span>
-        </div>
-        <div style="display: flex;" id="action-div">
-            <div class="action-icon">
-                <img style="height: 25px; width: 25px;" src="./assets/images/icon-compare.svg" alt="compare">
-                <p style="margin-left: 5px; margin-top: 15px;">Compare</p>
-            </div>
-            <div class="action-icon">
-                <img style="height: 25px; width: 25px;" src="./assets/images/icon-heart.svg" alt="wishlist">
-                <p style="margin-left: 5px; margin-top: 15px;">Wishlist</p>
-            </div>
-            <div class="action-icon">
-                <img style="height: 25px; width: 25px;" src="./assets/images/icon-cart.svg" alt="cart">
-                <p style="margin-left: 5px; margin-top: 15px;">Cart</p>
-            </div>
-            <div class="action-icon">
-                <img style="height: 25px; width: 25px;" src="./assets/images/icon-user.svg" alt="account">
-                <p style="margin-left: 5px; margin-top: 15px;">Account</p>
-            </div>
-        </div>
-    </div>
-    <div class="sticky-bar">
-        <div class="left-side">
-            <div class="btn-group">
-                <button class="btn btn-success btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Large button
-                </button>
-                <ul class="dropdown-menu">
-                    ...
-                </ul>
-            </div>
-        </div>
-        <div class="right-side">
+        </section>
 
+
+        <section class="popular-categories">
+            <div class="mycontainer">
+                <div id="category-top">
+                    <h1>Featured Categories</h1>
+                    <nav>
+                        <a href="" class="top-left">Cake & Milk</a>
+                        <a href="" class="top-left">Coffes & Teas</a>
+                        <a href="" class="top-left">Pet Foods</a>
+                        <a href="" class="top-left">Vegetables</a>
+                    </nav>
+                </div>
+                <div id="category-bottom">
+
+                    <div class="category-card">
+                        <img src="./assets/images/categories-img/cat-1.png" alt="Vegetables">
+                        <a href="#">Vegetables</a>
+                        <p>72 items</p>
+                    </div>
+                    <div class="category-card">
+                        <img src="./assets/images/categories-img/cat-2.png" alt="Vegetables">
+                        <a href="#">Vegetables</a>
+                        <p>72 items</p>
+                    </div>
+                    <div class="category-card">
+                        <img src="./assets/images/categories-img/cat-3.png" alt="Vegetables">
+                        <a href="#">Vegetables</a>
+                        <p>72 items</p>
+                    </div>
+                    <div class="category-card">
+                        <img src="./assets/images/categories-img/cat-4.png" alt="Vegetables">
+                        <a href="#">Vegetables</a>
+                        <p>72 items</p>
+                    </div>
+                    <div class="category-card">
+                        <img src="./assets/images/categories-img/cat-5.png" alt="Vegetables">
+                        <a href="#">Vegetables</a>
+                        <p>72 items</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="banners">
+            <div class="mycontainer">
+                <div class="banners-in">
+                    <img src="./assets/images/banners-img/banner-1.png" alt="banner1">
+                     <div id="banner-text-btn">
+                        <h1>Everyday Fresh &
+                            Clean with Our
+                            Products
+                        </h1>
+                        <button type="button" class="btn btn-success">Success</button>
+                     </div>
+                </div>
+            </div>
         </div>
-    </div>
+
+
+    </main>
+
+
 
 </body>
 
