@@ -122,6 +122,7 @@ p {
 
 .sticky-bar-nav a:hover {
     color: #3BB77E;
+    transition: all 0.3s ease 0s;
 }
 
 .slider {
@@ -229,7 +230,7 @@ p {
 }
 #category-top nav a:hover{
     color: #3BB77E;
-    transition: 300ms;
+    transition: all 0.3s ease 0s;
 }
 
 #category-bottom{
@@ -277,12 +278,18 @@ p {
 
 #category-bottom .category-card a:hover{
     color: #3BB77E;
-    transition: 0.25s;
+    transition: all 0.3s ease 0s;
 }
 
+.banners{
+    margin-top: 60px;
+}
 
 .banners-in{
     display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .banners-in img{
@@ -292,10 +299,161 @@ p {
     border-radius: 10px;
 }
 
-.banners-text-btn{
-
+#banner-text-btn-1{
+    position: absolute;
+    top: 90px;
+    left: 60px;
 } 
 
-.banners-text-btn h1{
-    width: 5px;
+#banner-text-btn-2{
+    position: absolute;
+    top: 90px;
+    left: 590px;
 } 
+
+#banner-text-btn-3{
+    position: absolute;
+    top: 90px;
+    left: 1130px;
+} 
+.banner-text-btn h1{
+    width: 270px;
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 24px;
+    margin-bottom: 15px;
+    min-height: 100px;
+} 
+.banner-text-btn button{
+    background-color: #3BB77E;
+    height: 35px;
+    width: 110px;
+    text-align: start;
+}
+
+.popular-products{
+    margin-top: 50px;
+    margin-bottom: 500px;
+}
+
+#popular-products-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+#popular-products-nav h1{
+    color: #253D4E;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+#popular-products-nav nav a{
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #253D4E;
+    font-weight: 600;
+}
+#popular-products-nav nav a:hover{
+    color: #3BB77E;
+    transition: 300ms;
+}
+
+#products-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    flex-flow: row wrap;
+}
+
+.product-card{
+    flex: 0 1 calc(20% - 0px);
+    height: 500px;
+    border: 1px solid #253D4E;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.product-card img{
+    border-radius: 10px;
+    height: 300px;
+    width: 283px;
+}
+
+.product-card-content a{
+    text-decoration: none;
+} 
+
+.product-card-content p{
+    font-size: small;
+    margin: auto;
+    width: 90%;
+    color: #7E7E7E;
+} 
+
+.product-card-content a h1{
+    width: 300px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.2;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    color: #253D4E;
+}
+#prod-rating{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+#prod-rating svg{
+    width: 12px;
+    height: 12px;
+}
+#prod-rating span{
+    font-size: 13.5px;
+    color: #7E7E7E;
+}
+
+.product-card-bottom {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+.product-price span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #3BB77E;
+}
+.product-price span.old-price {
+    font-size: 14px;
+    color: #adadad;
+    margin: 0 0 0 7px;
+    text-decoration: line-through;
+}
+.product-card-bottom .add-cart .add {
+    position: relative;
+    display: inline-block;
+    padding: 6px 20px 6px 20px;
+    border-radius: 4px;
+    background-color: #DEF9EC;
+    font-size: 14px;
+    font-weight: 500;
+    color: #3BB77E;
+}
+.product-card-content a h1:hover{
+    color: #3BB77E;
+    transition: all 0.3s ease 0s;
+}
+.product-card-content a p:hover{
+    color: #3BB77E;
+    transition: all 0.3s ease 0s;
+}
+
