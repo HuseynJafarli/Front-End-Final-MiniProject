@@ -567,7 +567,7 @@ a{
 }
 
 .fruit-vegetable{
-    margin-bottom: 200px;
+    margin-bottom: 70px;
 }
 .fruit-vegetable-in{
     display: flex;
@@ -609,4 +609,52 @@ a{
     height: 115px;
     width: 115px;
     border-radius: 10px;
+}
+
+.banner-footer{
+    margin-bottom: 40px;
+}
+
+.banner-footer-in #banner-back{
+    position: relative;
+    height: 450px;
+    width: 100%;
+    border-radius: 20px;
+}
+.banner-footer-in #banner-front{
+    position: absolute;
+    height: 350px;
+    width: 650px;
+    right: 140px;
+    top: 4038px;
+}
+
+
+
+.features-footer{
+    margin-bottom: 70px;
+}
+
+.features-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feature-card{
+    width: 298px;
+    display: flex;
+    padding: 20px;
+    background-color: #eeeeee;
+    gap: 20px;
+    border-radius: 10px;
+}
+.feature-card img{
+    height: 60px;
+    width: 60px;
+}
+
+.feature-text h3{
+    font-size: large;
+    font-family: 'Quicksand' sans-serif;
 }
