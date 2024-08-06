@@ -11,6 +11,10 @@ p {
     font-family: "Lato", sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
+
 .mycontainer {
     width: 94%;
     margin: auto;
@@ -413,9 +417,8 @@ p {
     margin-top: 10px;
     margin-bottom: 5px;
 }
-#prod-rating svg{
-    width: 12px;
-    height: 12px;
+#prod-rating i{
+    color: gold;
 }
 #prod-rating span{
     font-size: 13.5px;
@@ -461,7 +464,7 @@ p {
 }
 
 .daily-best-sells{
-    margin-bottom: 100px;
+    margin-bottom: 60px;
     border: 1px solid #253D4E;
 }
 
@@ -504,20 +507,106 @@ p {
 }
 
 .deals-of-day{
-    margin-bottom: 300px;
+    margin-bottom: 140px;
 }
 
-
+.countdown ul{
+    width: 90%;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
   
-#countdown li {
-    display: inline-block;
+.countdown li {
+    background-color: #fff;
+    box-shadow: 1px 1px 1px 1px #253D4E;
+    border-radius: 10px;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-size: small;
     list-style-type: none;
-    padding: 1em;
     text-transform: uppercase;
   }
   
-#countdown li span {
-    display: block;
-    font-size: larger;
+.countdown li span {
+    font-size: 20px;
+    color: #3BB77E;
   }
+
+.deals-row{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.deals-row .deal-card img{
+    height: 380px;
+    width: 380px;
+    border-radius: 20px;
+    margin: auto;
+}
+.banner-description{  
+    position: absolute;
+    top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.banner-description .product-card-content{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px #253D4E;
+    width: 80%;
+}
+
+.fruit-vegetable{
+    margin-bottom: 200px;
+}
+.fruit-vegetable-in{
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-selling{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.top-selling h1{
+    font-size: 24px;
+    color: #253D4E;
+    font-weight: 700;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #3BB77E;
+}
+
+.fruit-veg-div{
+    display: flex;
+}
+
+.fruit-veg-div a h1{
+    width: 240px;
+    color: #253D4E;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-left: 12px;
+    padding: 0;
+    border-bottom: 0;
+}
+.fruit-veg-div a h1:hover{
+    color: #3BB77E;
+    transition: all 0.3s ease 0s;
+}
+.fruit-vegetable .fruit-veg-div img{
+    height: 115px;
+    width: 115px;
+    border-radius: 10px;
+}
