@@ -1,0 +1,22 @@
+{
+  "sliders": [
+    {
+      "text": "another title",
+      "description": "dfvdfg",
+      "image": "./assets/images/slider-2.png",
+      "id": "3"
+    },
+    {
+      "text": "adsfasdfasdfsdf",
+      "description": "AFAD",
+      "image": "./assets/images/slider-2.png",
+      "id": "4"
+    },
+    {
+      "text": "a",
+      "description": "A",
+      "image": "./assets/images/slider-1.png",
+      "id": "5"
+    }
+  ]
+}
