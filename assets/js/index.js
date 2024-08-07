@@ -1,22 +1,25 @@
-const sliderURL = "http://localhost:3000/sliders"
-let carouselDiv = document.querySelector(".carousel-inner")
+const sliderURL = "http://localhost:3000/sliders";
+let carouselDiv = document.querySelector(".carousel-inner");
+let carouselIndicators = document.querySelector(".carousel-indicators");
 fetch(sliderURL)
     .then(response => response.json())
     .then(datas => {
-        datas.forEach(data => {
+        datas.forEach((data, index) => {
             carouselDiv.innerHTML += `
-                <div class="carousel-item active">
-                    <img src="${data.image}" class="d-block w-100" alt="...">
+                <div class="carousel-item ${index === 0 ? 'active' : ''}">
+                    <img src="${data.image}" class="d-block w-100" alt="">
+                    <div class="slider-content">
+                        <h1 class="display-1">${data.text}</h1>
+                        <p>${data.description}</p>
+                    </div>
                 </div>
+            `;
+            carouselIndicators.innerHTML += `
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="${index}"
+                    class="active" aria-current="true" aria-label="Slide ${index}"></button>
             `
         });
     });
-
-
-
-
-
-
 
 
 
