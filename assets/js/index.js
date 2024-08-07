@@ -33,18 +33,20 @@ async function fetchData() {
                 <div class="category-card">
                     <img src="${data.image}" alt="${data.name}">
                     <a href="#">${data.name}</a>
-                    <p>${data.products.length} items</p>
+                    <p>0 items</p>
                 </div>
             `;
         });
 
-        startCountdown();
     } catch (error) {
         console.error(error);
     }
 }
 
-fetchData();
+document.addEventListener("DOMContentLoaded", function () {
+    fetchData();
+    startCountdown();
+})
 
 function startCountdown() {
     const second = 1000,

@@ -15,10 +15,64 @@
   ],
   "categories": [
     {
-      "id": "3",
+      "name": "Cake & Milk",
+      "image": "./assets/images/categories-img/cat-13.png",
+      "id": "3"
+    },
+    {
+      "id": "4",
+      "name": "Organic Kiwi",
+      "image": "./assets/images/categories-img/cat-12.png"
+    },
+    {
+      "id": "5",
+      "name": "Peach",
+      "image": "./assets/images/categories-img/cat-11.png"
+    },
+    {
+      "name": "Red Apple",
+      "image": "./assets/images/categories-img/cat-9.png",
+      "id": "6"
+    },
+    {
+      "name": "Snack",
+      "image": "./assets/images/categories-img/cat-3.png",
+      "id": "7"
+    },
+    {
+      "id": "8",
+      "name": "Vegetables",
+      "image": "./assets/images/categories-img/cat-1.png"
+    },
+    {
+      "id": "9",
+      "name": "Strawberry",
+      "image": "./assets/images/categories-img/cat-2.png"
+    },
+    {
+      "name": "Black plum",
+      "image": "./assets/images/categories-img/cat-4.png",
+      "id": "10"
+    },
+    {
+      "name": "Custard apple",
+      "image": "./assets/images/categories-img/cat-5.png",
+      "id": "11"
+    },
+    {
+      "name": "Coffee & Tea",
+      "image": "./assets/images/categories-img/cat-14.png",
+      "id": "12"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
       "name": "Fruit",
-      "image": "./assets/images/categories-img/cat-2.png",
-      "products": []
+      "category": "Black plum",
+      "image": "./assets/images/slider-2.png",
+      "oldPrice": "",
+      "newPrice": "15"
     }
   ]
 }
