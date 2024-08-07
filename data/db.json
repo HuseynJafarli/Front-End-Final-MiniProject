@@ -11,6 +11,12 @@
       "description": "Subscribe to newsettler",
       "image": "./assets/images/slider-1.png",
       "id": "6"
+    },
+    {
+      "text": "This is just a test la lal la la la",
+      "description": "also a test la lal la",
+      "image": "https://picsum.photos/1500/500",
+      "id": "7"
     }
   ],
   "categories": [
@@ -55,24 +61,96 @@
       "id": "10"
     },
     {
-      "name": "Custard apple",
-      "image": "./assets/images/categories-img/cat-5.png",
-      "id": "11"
-    },
-    {
       "name": "Coffee & Tea",
       "image": "./assets/images/categories-img/cat-14.png",
       "id": "12"
+    },
+    {
+      "id": "13",
+      "name": "Custard apple",
+      "image": "./assets/images/categories-img/cat-5.png"
     }
   ],
   "products": [
     {
-      "id": "1",
-      "name": "Fruit",
-      "category": "Black plum",
-      "image": "./assets/images/slider-2.png",
-      "oldPrice": "",
-      "newPrice": "15"
+      "name": "Seeds of Change Organic Quinoa, Brown, & Red Rice",
+      "category": "Cake & Milk",
+      "image": "./assets/images/products-img/product-1-1.jpg",
+      "oldPrice": "12",
+      "newPrice": "7",
+      "id": "1"
+    },
+    {
+      "name": "Angie’s Boomchickapop Sweet & Salty Kettle Corn",
+      "category": "Snack",
+      "image": "./assets/images/products-img/product-3-1.jpg",
+      "oldPrice": "45",
+      "newPrice": "23",
+      "id": "2"
+    },
+    {
+      "name": "Foster Farms Takeout Crispy Classic Buffalo Wings",
+      "category": "Cake & Milk",
+      "image": "./assets/images/products-img/product-4-1.jpg",
+      "oldPrice": "42",
+      "newPrice": "21",
+      "id": "3"
+    },
+    {
+      "name": "Blue Diamond Almonds Lightly Salted Vegetables",
+      "category": "Vegetables",
+      "image": "./assets/images/products-img/product-5-1.jpg",
+      "oldPrice": "22",
+      "newPrice": "11",
+      "id": "4"
+    },
+    {
+      "name": "Chobani Complete Vanilla Greek Kiwi",
+      "category": "Organic Kiwi",
+      "image": "./assets/images/products-img/product-6-1.jpg",
+      "oldPrice": "33",
+      "newPrice": "25",
+      "id": "5"
+    },
+    {
+      "name": "Canada Dry Peach Ale – 2 L Bottle - 200ml - 400g",
+      "category": "Cake & Milk",
+      "image": "./assets/images/products-img/product-7-1.jpg",
+      "oldPrice": "13",
+      "newPrice": "10",
+      "id": "6"
+    },
+    {
+      "name": "Encore Seafoods Stuffed Alaskan Salmon",
+      "category": "Vegetables",
+      "image": "./assets/images/products-img/product-8-1.jpg",
+      "oldPrice": "21",
+      "newPrice": "14",
+      "id": "7"
+    },
+    {
+      "name": "Gorton’s Beer Battered Fish Fillets with soft paper",
+      "category": "Coffee & Tea",
+      "image": "./assets/images/products-img/product-9-1.jpg",
+      "oldPrice": "22",
+      "newPrice": "11",
+      "id": "8"
+    },
+    {
+      "id": "9",
+      "name": "Angie’s Boomchickapop Sweet & Salty Kettle Corn",
+      "category": "Snack",
+      "image": "./assets/images/products-img/product-3-1.jpg",
+      "oldPrice": "33",
+      "newPrice": "22"
+    },
+    {
+      "name": "Haagen-Dazs Caramel Cone Ice Cream Ketchup",
+      "category": "Snack",
+      "image": "./assets/images/products-img/product-10-1.jpg",
+      "oldPrice": "56",
+      "newPrice": "42",
+      "id": "10"
     }
   ]
 }

@@ -52,6 +52,23 @@ document.addEventListener("DOMContentLoaded", function () {
                         });
                     })
                 })
+
+                document.querySelectorAll(".update-btn").forEach(btn => {
+                    btn.addEventListener("click", function (e) {
+                        e.preventDefault();
+                        const ProductId = btn.getAttribute("data-id");
+
+                        fetch(`${productURL}/${ProductId}`)
+                            .then(response => response.json())
+                            .then(data => {
+                                document.getElementById("updateProductId").value = data.id;
+                                document.getElementById("updateProductName").value = data.name;
+                                document.getElementById("updateProductImage").value = data.image;
+                                document.getElementById("updateProductOldPrice").value = data.oldPrice;
+                                document.getElementById("updateProductNewPrice").value = data.newPrice;
+                            })
+                    })
+                })
             });
         })
 
@@ -62,11 +79,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 categorySelect.forEach(categorySel => {
                     categorySel.innerHTML += `
                     <option ${index === 0 ? "selected" : ''}>${category.name}</option>
-                `   
+                `
                 });
             })
         })
-
 })
 
 productCreateForm.addEventListener("submit", async function (e) {
