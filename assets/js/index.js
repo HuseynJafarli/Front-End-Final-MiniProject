@@ -1,10 +1,15 @@
 const sliderURL = "http://localhost:3000/sliders";
+const categoryURL = "http://localhost:3000/categories";
 let carouselDiv = document.querySelector(".carousel-inner");
 let carouselIndicators = document.querySelector(".carousel-indicators");
-fetch(sliderURL)
-    .then(response => response.json())
-    .then(datas => {
-        datas.forEach((data, index) => {
+let categoryDiv = document.getElementById("category-bottom");
+
+async function fetchData() {
+    try {
+        const sliderResponse = await fetch(sliderURL);
+        const sliders = await sliderResponse.json();
+        
+        sliders.forEach((data, index) => {
             carouselDiv.innerHTML += `
                 <div class="carousel-item ${index === 0 ? 'active' : ''}">
                     <img src="${data.image}" class="d-block w-100" alt="">
@@ -16,29 +21,36 @@ fetch(sliderURL)
             `;
             carouselIndicators.innerHTML += `
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="${index}"
-                    class="active" aria-current="true" aria-label="Slide ${index}"></button>
-            `
+                    class="${index === 0 ? 'active' : ''}" aria-current="true" aria-label="Slide ${index}"></button>
+            `;
         });
-    });
 
+        const categoryResponse = await fetch(categoryURL);
+        const categories = await categoryResponse.json();
 
+        categories.forEach(data => {
+            categoryDiv.innerHTML += `
+                <div class="category-card">
+                    <img src="${data.image}" alt="${data.name}">
+                    <a href="#">${data.name}</a>
+                    <p>${data.products.length} items</p>
+                </div>
+            `;
+        });
 
+        startCountdown();
+    } catch (error) {
+        console.error(error);
+    }
+}
 
+fetchData();
 
-
-
-
-
-
-
-
-
-
-(function () {
+function startCountdown() {
     const second = 1000,
-        minute = second * 60,
-        hour = minute * 60,
-        day = hour * 24;
+          minute = second * 60,
+          hour = minute * 60,
+          day = hour * 24;
 
     let today = new Date(),
         dd = String(today.getDate()).padStart(2, "0"),
@@ -51,7 +63,7 @@ fetch(sliderURL)
 
     let x = setInterval(function () {
         const now = new Date().getTime(),
-            distance = countDownDate - now;
+              distance = countDownDate - now;
 
         let daysElements = document.getElementsByClassName("days");
         let hoursElements = document.getElementsByClassName("hours");
@@ -87,4 +99,4 @@ fetch(sliderURL)
             }
         }
     }, 1000);
-})();
+}

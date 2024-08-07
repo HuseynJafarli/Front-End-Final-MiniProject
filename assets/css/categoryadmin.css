@@ -1,0 +1,8 @@
+.create-div{
+    display: flex;
+    justify-content: space-between;
+}
+
+body{
+    background-color: #212529;
+}

@@ -15,14 +15,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.12.4/sweetalert2.min.css"
         integrity="sha512-WxRv0maH8aN6vNOcgNFlimjOhKp+CUqqNougXbz0E+D24gP5i+7W/gcc5tenxVmr28rH85XHF5eXehpV2TQhRg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./assets/css/slideradmin.css">
-    <title>Admin Panel | Slider</title>
+    <link rel="stylesheet" href="./assets/css/categoryadmin.css">
+    <title>Admin Panel | Category</title>
 </head>
 
 <body>
     <div class="container">
         <div class="create-div">
-            <h1 style="color: whitesmoke;">Sliders</h1>
+            <h1 style="color: whitesmoke;">Categories</h1>
             <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#postmodal">
                 Create
             </button>
@@ -34,13 +34,12 @@
             <thead>
                 <tr>
                     <th scope="col">Id</th>
-                    <th scope="col">Title</th>
-                    <th scope="col">Description</th>
+                    <th scope="col">Name</th>
                     <th scope="col">Image</th>
                     <th scope="col">Action</th>
                 </tr>
             </thead>
-            <tbody id="slider-table">
+            <tbody id="category-table">
 
             </tbody>
         </table>
@@ -51,37 +50,31 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Create Slider</h1>
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Create Category</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form id="SliderCreateForm">
+                        <form id="CategoryCreateForm">
                             <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Slider Id</label>
-                                <input required type="number" name="id" class="form-control"
-                                    id="exampleFormControlInput1" placeholder="Enter Id">
+                                <label for="exampleFormControlInput1" class="form-label">Category Id</label>
+                                <input required type="number" name="id" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Enter Id">
                             </div>
                             <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Slider Text</label>
-                                <input type="text" name="text" class="form-control"
-                                    id="exampleFormControlInput2" placeholder="Enter Text">
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleFormControlTextarea1" class="form-label">Slider Description</label>
-                                <textarea class="form-control" name="description" id="exampleFormControlTextarea1"
-                                    rows="3" placeholder="Enter Description"></textarea>
+                                <label for="exampleFormControlInput1" class="form-label">Category Name</label>
+                                <input required type="text" name="name" class="form-control"
+                                    id="exampleFormControlInput2" placeholder="Enter Name">
                             </div>
                             <div class="mb-3">
                                 <label for="exampleFormControlInput1" class="form-label">Image Location</label>
-                                <input type="text" name="image" class="form-control"
+                                <input required type="text" name="image" class="form-control"
                                     id="exampleFormControlInput3" placeholder="Enter URL or Directory address">
                             </div>
-
                         </form>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="submit" form="SliderCreateForm" class="btn btn-primary">Create</button>
+                        <button type="submit" form="CategoryCreateForm" class="btn btn-primary">Create</button>
                     </div>
                 </div>
             </div>
@@ -91,39 +84,35 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Update Slider</h1>
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Update Category</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form id="SliderUpdateForm">
+                        <form id="CategoryUpdateForm">
                             <div class="mb-3">
-                                <label for="updateSliderId" class="form-label">Slider Id</label>
-                                <input required type="number" name="id" class="form-control" id="updateSliderId" disabled>
+                                <label for="updateCategoryId" class="form-label">Category Id</label>
+                                <input required type="number" name="id" class="form-control" id="updateCategoryId"
+                                    disabled>
                             </div>
                             <div class="mb-3">
-                                <label for="updateSliderText" class="form-label">Slider Text</label>
-                                <input required type="text" name="text" class="form-control" id="updateSliderText">
+                                <label for="updateCategoryName" class="form-label">Category Name</label>
+                                <input required type="text" name="name" class="form-control" id="updateCategoryName">
                             </div>
                             <div class="mb-3">
-                                <label for="updateSliderDescription" class="form-label">Slider Description</label>
-                                <textarea class="form-control" name="description" id="updateSliderDescription" rows="3"></textarea>
-                            </div>
-                            <div class="mb-3">
-                                <label for="updateSliderImage" class="form-label">Image Location</label>
-                                <input required type="text" name="image" class="form-control" id="updateSliderImage">
+                                <label for="updateCategoryImage" class="form-label">Image Location</label>
+                                <input required type="text" name="image" class="form-control" id="updateCategoryImage">
                             </div>
                         </form>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="submit" form="SliderUpdateForm" class="btn btn-primary">Update</button>
+                        <button type="submit" form="CategoryUpdateForm" class="btn btn-primary">Update</button>
                     </div>
                 </div>
             </div>
         </div>
-        
     </div>
-    <script src="./assets/js/SliderAdmin.js"></script>
+    <script src="./assets/js/CategoryAdmin.js"></script>
 </body>
 
 </html>

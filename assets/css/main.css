@@ -628,18 +628,51 @@ a{
 
 .banner-footer-in #banner-back{
     position: relative;
-    height: 450px;
+    border-radius: 20px;
+}
+.banner-footer-in #banner-back img{
+    height: 400px;
     width: 100%;
     border-radius: 20px;
 }
 .banner-footer-in #banner-front{
     position: absolute;
-    height: 350px;
-    width: 650px;
-    right: 140px;
-    top: 4038px;
+    top: 65px;
+    left: 910px;
+}
+.banner-footer-in #banner-front img{
+    height: 335px;
+    width: 600px;
 }
 
+.banner-footer-in #banner-back .slider-content {
+    position: absolute;
+    top: 80px;
+    left: 100px;
+}
+
+.banner-footer-in #banner-back .slider-content h1 {
+    width: 600px;
+    font-size: 40px;
+    font-weight: 700;
+    color: #253D4E;
+}
+
+.banner-footer-in #banner-back .slider-content p {
+    font-size: 20px;
+    color: grey;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.banner-footer-in #banner-back .subscribe-form {
+    position: absolute;
+    left: 0px;
+    top: 200px;
+    width: 100%;
+    height: 100%;
+}
 
 
 .features-footer{

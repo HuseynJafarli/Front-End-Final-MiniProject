@@ -1,0 +1,24 @@
+{
+  "sliders": [
+    {
+      "text": "Fresh Vegetables Big Discount",
+      "description": "Save up to 50% off on your first order",
+      "image": "./assets/images/slider-2.png",
+      "id": "4"
+    },
+    {
+      "text": "Don't miss amazing grocery deals",
+      "description": "Subscribe to newsettler",
+      "image": "./assets/images/slider-1.png",
+      "id": "6"
+    }
+  ],
+  "categories": [
+    {
+      "id": "3",
+      "name": "Fruit",
+      "image": "./assets/images/categories-img/cat-2.png",
+      "products": []
+    }
+  ]
+}
