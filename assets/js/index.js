@@ -7,6 +7,7 @@ let categoryDiv = document.getElementById("category-bottom");
 let productsDiv = document.querySelector(".products-row");
 let search = document.getElementById("submit-form");
 let searchInput = document.getElementById("search-input");
+let dropDowns = document.querySelectorAll(".dropdown-menu")
 
 async function fetchData() {
     try {
@@ -46,6 +47,11 @@ async function fetchData() {
 
         categories.forEach(category => {
             const categoryCount = products.filter(product => product.category === category.name).length;
+            dropDowns.forEach(dropDown => {
+                dropDown.innerHTML += `
+                    <li><a class="dropdown-item" href="#">${category.name}</a></li>
+                `
+            });
             categoryDiv.innerHTML += `
                 <div class="category-card">
                     <img src="${category.image}" alt="${category.name}">
