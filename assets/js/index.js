@@ -29,8 +29,8 @@ async function fetchData() {
             `;
         });
 
-        const productResponse = await fetch(productURL);
-        const products = await productResponse.json();
+        let productResponse = await fetch(productURL);
+        let products = await productResponse.json();
 
         DisplayProducts(products)
         searchInput.addEventListener("input", function () {
@@ -41,8 +41,8 @@ async function fetchData() {
             DisplayProducts(filteredProducts);
         });
 
-        const categoryResponse = await fetch(categoryURL);
-        const categories = await categoryResponse.json();
+        let categoryResponse = await fetch(categoryURL);
+        let categories = await categoryResponse.json();
 
         categories.forEach(category => {
             const categoryCount = products.filter(product => product.category === category.name).length;
@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
     fetchData();
     startCountdown();
 
-    
+
 })
 
 function startCountdown() {

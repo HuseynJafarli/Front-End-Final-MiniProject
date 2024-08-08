@@ -56,19 +56,19 @@
       "image": "./assets/images/categories-img/cat-2.png"
     },
     {
-      "name": "Black plum",
-      "image": "./assets/images/categories-img/cat-4.png",
-      "id": "10"
-    },
-    {
       "name": "Coffee & Tea",
       "image": "./assets/images/categories-img/cat-14.png",
       "id": "12"
     },
     {
-      "id": "13",
+      "name": "Black plum",
+      "image": "./assets/images/categories-img/cat-4.png",
+      "id": "13"
+    },
+    {
       "name": "Custard apple",
-      "image": "./assets/images/categories-img/cat-5.png"
+      "image": "./assets/images/categories-img/cat-5.png",
+      "id": "14"
     }
   ],
   "products": [

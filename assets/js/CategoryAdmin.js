@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         });
                     })
                 })
-                
+
                 document.querySelectorAll(".update-btn").forEach(btn => {
                     btn.addEventListener("click", function (e) {
                         e.preventDefault();
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             })
                     })
                 })
-                
+
             });
         })
 })
